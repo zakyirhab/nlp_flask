@@ -4,6 +4,8 @@
 	Tim Deployment
 	2022
 '''
+import warnings
+warnings.filterwarnings("ignore", message="Trying to unpickle estimator MultinomialNB from version 0.24.1 when using version 1.2.2.")
 
 # =[Modules dan Packages]========================
 
@@ -14,8 +16,6 @@ from joblib import load
 import re
 import pickle
 import nltk
-import warnings
-warnings.filterwarnings("ignore", message="Trying to unpickle estimator MultinomialNB from version 0.24.1 when using version 1.2.2.")
 from sklearn.feature_extraction.text import TfidfVectorizer
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from nltk.tokenize import sent_tokenize, word_tokenize
